@@ -10,6 +10,12 @@ export default function App() {
   const [enteredText, enteredTextState] = useState('');
   const [goalsList, goalsListState] = useState(([] as any[]));
 
+  const onDeleteListHandler = (key: string) => {
+    goalsListState((prevList: any[]) => {
+      return [ ...prevList.filter((item: any) => item.key !== key )];
+    });
+  }
+
   return (
     <View style={styles.container}>
       <GoalInput 
@@ -17,12 +23,12 @@ export default function App() {
         onStateChange={(text: string) => enteredTextState(text)}
         onButtonPress={() => {
           return goalsListState((prevList: string[]) => [...prevList, {
-            key: ((Math.random()+100)*Math.random()).toString(),
+            key: enteredText,
             value: enteredText
           }])
         }}
       />
-      <GoalList list={goalsList} />
+      <GoalList list={goalsList} onDeleteItem={(key: string) => onDeleteListHandler(key)}/>
     </View>
   );
 }
