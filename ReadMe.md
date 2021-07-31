@@ -2,10 +2,10 @@
 
 A React Native Application that deals with learning of Basic Components using Udemy Learning.
 
-## Authors
+## Author
 
-* **Neil D** - *Fullstack Developer* - Cognizant
-
+* **Neil D** - Fullstack Developer - Cognizant
+<br />Looking for new opportunites - contact via mail - neildsouza257@gmail.com
 
 ## License
 
