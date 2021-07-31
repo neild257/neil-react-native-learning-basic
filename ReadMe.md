@@ -4,7 +4,7 @@ A React Native Application that deals with learning of Basic Components using Ud
 
 ## Authors
 
-* **Harshit Pareek** - *Software Engineer* - :sunglasses: :computer:
+* **Neil D** - *Fullstack Developer* - Cognizant
 
 
 ## License
